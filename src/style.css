@@ -25,6 +25,63 @@ GLOBAL VARIABLES
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: var(--v-light-gray);
+    font-family: var(--ff-primary);
+    font-size: var(--ff-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+h1, h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--v-dark-blue);
+}
+h1{
+    font-weight: 200;
+}
+h2{
+    font-weight: 600;
+}
+main{
+    width: 300px; /* TODO: use min of this and viewport width */
+    border: 1px solid; /* remove later*/
+}
+.text-section {
+    text-align: center;
+}
+.text-section p {
+    color: var(--gray-blue);
+    font-size: 13px;
+    font-weight: 200;
+}
+.cards-section{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 8px 15px hsla(234, 12%, 34%, .2) ;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.card:first-child{
+    border-top: 4px solid var(--cyan);
+}
+.card:nth-child(2){
+    border-top: 4px solid var(--red);
+}
+.card:nth-child(3){
+   border-top: 4px solid var(--orange);
+}
+.card:nth-child(4){
+   border-top: 4px solid var(--blue);
+}
 .attribution {
     font-size: 11px;
     text-align: center;
