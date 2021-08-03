@@ -109,7 +109,10 @@ main {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
+    body{
+        padding-top: 2rem;
+    }
     main {
         width: 980px;
     }
@@ -118,8 +121,8 @@ main {
         font-size: 30px;
     }
     .text-section p {
-        padding-left: 18em;
-        padding-right: 18em;
+        padding-left: 20em;
+        padding-right: 20em;
         margin-bottom: 2.3rem;
         font-weight: normal;
     }
