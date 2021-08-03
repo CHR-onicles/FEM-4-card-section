@@ -109,3 +109,45 @@ main {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+@media screen and (min-width: 800px) {
+    main {
+        width: 980px;
+    }
+    h1,
+    h2 {
+        font-size: 30px;
+    }
+    .text-section p {
+        padding-left: 18em;
+        padding-right: 18em;
+        margin-bottom: 2.3rem;
+        font-weight: normal;
+    }
+    .cards-section {
+        display: grid;
+        grid-template-areas:
+            "card-1 card-2 card-4"
+            "card-1 card-3 card-4";
+        gap: 1.5rem;
+    }
+    .card {
+        padding-top: 1.3em;
+        width: 310px;
+        height: 220px;
+    }
+    .card:first-child {
+        grid-area: card-1;
+        place-self: center;
+    }
+    .card:nth-child(2) {
+        grid-area: card-2;
+        margin-bottom: -0.5rem;
+    }
+    .card:nth-child(3) {
+        grid-area: card-3;
+    }
+    .card:nth-child(4) {
+        grid-area: card-4;
+        place-self: center;
+    }
+}
